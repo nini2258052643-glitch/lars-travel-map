@@ -10,6 +10,9 @@
     >
 
     <title>LARS / IN TRANSIT</title>
+    <meta name="description" content="Lars的城市日记与中国旅行地图">
+    <meta property="og:title" content="LARS / IN TRANSIT">
+    <meta property="og:description" content="Lars的城市日记与中国旅行地图">
 
     <!-- 字体 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -134,107 +137,124 @@
 
         </header>
 
-
-
-        <!--
-            这里不是一个灰色地图框。
-            它只是负责裁切地图和接收拖拽/缩放。
-            本身完全透明。
-        -->
-
-        <div
-            id="map-frame"
-            class="map-frame"
-        >
+        <!-- 布局容器：左侧独立地图区域 + 右侧固定城市档案面板 -->
+        <div class="map-layout-container">
 
             <div
-                id="map-viewport"
-                class="map-viewport"
+                id="map-frame"
+                class="map-frame"
             >
 
-                <svg
-                    id="china-map"
-                ></svg>
+                <div
+                    id="map-viewport"
+                    class="map-viewport"
+                >
+
+                    <svg
+                        id="china-map"
+                    ></svg>
+
+                </div>
+
+                <!-- 操作提示 -->
+                <div class="map-hint">
+                    SCROLL TO ZOOM
+                    <span>·</span>
+                    DRAG TO MOVE
+                </div>
+
+                <!-- 页码 -->
+                <div class="map-page-number">
+                    02 / 02
+                </div>
 
             </div>
 
-        </div>
+            <!-- =========================
+                 城市旅行档案（固定侧栏）
+            ========================== -->
 
-
-
-        <!-- =========================
-             城市日记
-        ========================== -->
-
-        <aside
-            id="place-panel"
-            class="place-panel"
-        >
-
-            <button
-                id="close-place"
-                class="close-place"
+            <aside
+                id="place-panel"
+                class="place-panel"
             >
-                ×
-            </button>
+
+                <div class="panel-header-bar">
+                    <div class="place-label">
+                        CITY ARCHIVE
+                    </div>
+
+                    <button
+                        id="close-place"
+                        class="close-place"
+                        type="button"
+                        data-action="close-city-panel"
+                        aria-label="关闭城市面板"
+                    >
+                        ×
+                    </button>
+                </div>
 
 
-            <div class="place-label">
-                CITY DIARY
-            </div>
+                <h2 id="place-title">
+                    杭州
+                </h2>
 
 
-            <h2 id="place-title">
-                杭州
-            </h2>
+                <div
+                    id="place-location"
+                    class="place-location"
+                >
+                    ZHEJIANG / CHINA
+                </div>
 
 
-            <div
-                id="place-location"
-                class="place-location"
-            >
-                ZHEJIANG / CHINA
-            </div>
+                <div class="place-line"></div>
 
 
-            <div class="place-line"></div>
+                <div
+                    id="place-description"
+                    class="place-description"
+                >
+                    Lars关于杭州的记忆
+                </div>
 
+                <!-- 两个独立板块导航：板块 01 飞行日志 / 板块 02 城市记忆 -->
+                <nav class="city-sections-nav">
+                    <button
+                        type="button"
+                        class="section-tab active"
+                        data-tab="memories"
+                        data-action="switch-city-tab"
+                    >
+                        <span class="tab-index">01</span>
+                        <span class="tab-name">飞行日志</span>
+                        <span id="tab-count-memories" class="tab-count-badge"></span>
+                    </button>
 
-            <div
-                id="place-description"
-                class="place-description"
-            >
-                这里将放置 Lars 关于杭州的私人记忆。
-            </div>
+                    <button
+                        type="button"
+                        class="section-tab"
+                        data-tab="places"
+                        data-action="switch-city-tab"
+                    >
+                        <span class="tab-index">02</span>
+                        <span class="tab-name">城市记忆</span>
+                        <span id="tab-count-places" class="tab-count-badge"></span>
+                    </button>
+                </nav>
 
+                <!-- 板块内容容器 -->
+                <div class="city-sections-content">
+                    <!-- 板块 01: 飞行日志 -->
+                    <div id="section-pane-memories" class="section-pane active"></div>
 
-            <div class="place-date">
-                DATE / —
-            </div>
+                    <!-- 板块 02: 城市记忆 -->
+                    <div id="section-pane-places" class="section-pane"></div>
+                </div>
 
-        </aside>
+            </aside>
 
-
-
-        <!-- 操作提示 -->
-
-        <div class="map-hint">
-
-            SCROLL TO ZOOM
-
-            <span>
-                ·
-            </span>
-
-            DRAG TO MOVE
-
-        </div>
-
-
-        <!-- 页码 -->
-
-        <div class="map-page-number">
-            02 / 02
         </div>
 
     </section>
@@ -244,40 +264,73 @@
 
 
 <!-- =========================
-     鸟
+     小鸟光标系统（带微弱飞行残影）
 ========================== -->
 
-<div class="bird-cursor">
+<div class="bird-cursor-trail trail-2" aria-hidden="true"></div>
+<div class="bird-cursor-trail trail-1" aria-hidden="true"></div>
+
+<div class="bird-cursor" aria-hidden="true">
 
     <svg
-        width="42"
+        class="bird-svg"
+        width="44"
         height="32"
-        viewBox="0 0 42 32"
+        viewBox="0 0 44 32"
         xmlns="http://www.w3.org/2000/svg"
     >
-
+        <!-- 远侧微羽 -->
         <path
+            class="bird-back-wing"
+            d="M 17 12 C 22 5, 29 3, 34 5 C 29 8, 25 12, 23 15 Z"
+            fill="rgba(41, 39, 36, 0.15)"
+            stroke="currentColor"
+            stroke-width="0.9"
+            stroke-linejoin="round"
+        />
+
+        <!-- 主躯干与尾羽 -->
+        <path
+            class="bird-body"
             d="
-                M2 17
-                C8 7, 15 5, 20 12
-                C24 5, 32 3, 40 7
-                C34 9, 30 13, 27 18
-                C23 25, 15 28, 8 25
-                C12 23, 14 20, 15 17
-                C10 19, 6 19, 2 17Z
+                M 2 16
+                C 7 15, 12 17, 18 17
+                C 24 17, 30 15, 36 11
+                C 38 10, 42 11, 41 12
+                C 38 14, 34 18, 30 20
+                C 24 23, 16 23, 9 20
+                C 6 20, 3 19, 2 16 Z
+            "
+            fill="rgba(244, 240, 233, 0.65)"
+            stroke="currentColor"
+            stroke-width="1.2"
+            stroke-linejoin="round"
+        />
+
+        <!-- 近侧主翅膀（带扇动微动） -->
+        <path
+            class="bird-main-wing"
+            d="
+                M 15 17
+                C 14 9, 18 4, 25 2
+                C 28 1, 32 3, 31 5
+                C 28 8, 24 13, 23 18
+                C 20 18, 17 18, 15 17 Z
             "
             fill="none"
             stroke="currentColor"
-            stroke-width="1.4"
+            stroke-width="1.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
         />
 
+        <!-- 眼神与喙部点缀 -->
         <circle
-            cx="32"
-            cy="9"
-            r="1.3"
+            cx="38"
+            cy="11.5"
+            r="0.9"
             fill="currentColor"
         />
-
     </svg>
 
 </div>

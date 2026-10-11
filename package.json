@@ -1,0 +1,8 @@
+{
+  "name": "lars-in-transit",
+  "version": "1.0.0",
+  "description": "LARS / IN TRANSIT - 城市日记与旅行地图",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

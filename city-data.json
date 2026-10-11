@@ -1,0 +1,538 @@
+{
+  "projectName": "LARS / IN TRANSIT",
+  "version": "1.0.0",
+  "description": "Lars的城市日记与旅行地图 - 城市坐标与地点精选数据",
+  "cities": [
+    {
+      "id": "macao",
+      "name": "澳门",
+      "province": "澳门",
+      "x": 730.8,
+      "y": 740.5,
+      "description": "Lars关于澳门的记忆"
+    },
+    {
+      "id": "beijing",
+      "name": "北京",
+      "province": "北京",
+      "x": 736.9,
+      "y": 335.3,
+      "description": "Lars关于北京的记忆"
+    },
+    {
+      "id": "xiamen",
+      "name": "厦门",
+      "province": "福建",
+      "x": 819.6,
+      "y": 666.8,
+      "description": "Lars关于厦门的记忆"
+    },
+    {
+      "id": "changsha",
+      "name": "长沙",
+      "province": "湖南",
+      "x": 706.5,
+      "y": 599.5,
+      "description": "Lars关于长沙的记忆"
+    },
+    {
+      "id": "nanjing",
+      "name": "南京",
+      "province": "江苏",
+      "x": 814.6,
+      "y": 502.3,
+      "description": "Lars关于南京的记忆"
+    },
+    {
+      "id": "hangzhou",
+      "name": "杭州",
+      "province": "浙江",
+      "x": 834.4,
+      "y": 538.4,
+      "description": "Lars关于杭州的记忆"
+    },
+    {
+      "id": "jiaxing",
+      "name": "嘉兴",
+      "province": "浙江",
+      "x": 842.5,
+      "y": 531,
+      "description": "Lars关于嘉兴的记忆"
+    },
+    {
+      "id": "shanghai",
+      "name": "上海",
+      "province": "上海",
+      "x": 861,
+      "y": 515.1,
+      "description": "Lars关于上海的记忆"
+    },
+    {
+      "id": "haikou",
+      "name": "海口",
+      "province": "海南",
+      "x": 670.3,
+      "y": 796.7,
+      "description": "Lars关于海口的记忆"
+    },
+    {
+      "id": "zhengzhou",
+      "name": "郑州",
+      "province": "河南",
+      "x": 703.9,
+      "y": 468.5,
+      "description": "Lars关于郑州的记忆"
+    },
+    {
+      "id": "luzhou",
+      "name": "泸州",
+      "province": "四川",
+      "x": 568,
+      "y": 598,
+      "description": "Lars关于泸州的记忆"
+    },
+    {
+      "id": "changzhou",
+      "name": "常州",
+      "province": "江苏",
+      "x": 821,
+      "y": 515,
+      "description": "Lars关于常州的记忆"
+    },
+    {
+      "id": "wuyuan",
+      "name": "婺源",
+      "province": "江西",
+      "x": 782,
+      "y": 568,
+      "description": "Lars关于婺源的记忆"
+    },
+    {
+      "id": "nanning",
+      "name": "南宁",
+      "province": "广西",
+      "x": 626.4,
+      "y": 731.9,
+      "description": "Lars关于南宁的记忆"
+    },
+    {
+      "id": "yangzhou",
+      "name": "扬州",
+      "province": "江苏",
+      "x": 807.6,
+      "y": 503.8,
+      "description": "Lars关于扬州的记忆"
+    },
+    {
+      "id": "wuhan",
+      "name": "武汉",
+      "province": "湖北",
+      "x": 724.4,
+      "y": 547.3,
+      "description": "Lars关于武汉的记忆"
+    },
+    {
+      "id": "guangzhou",
+      "name": "广州",
+      "province": "广东",
+      "x": 730.9,
+      "y": 717.5,
+      "description": "Lars关于广州的记忆"
+    },
+    {
+      "id": "wuxi",
+      "name": "无锡",
+      "province": "江苏",
+      "x": 829,
+      "y": 518,
+      "description": "Lars关于无锡的记忆"
+    },
+    {
+      "id": "baotou",
+      "name": "包头",
+      "province": "内蒙古",
+      "x": 646,
+      "y": 320,
+      "description": "Lars关于包头的记忆"
+    },
+    {
+      "id": "zhuzhou",
+      "name": "株洲",
+      "province": "湖南",
+      "x": 709.7,
+      "y": 612.4,
+      "description": "Lars关于株洲的记忆"
+    },
+    {
+      "id": "shenyang",
+      "name": "沈阳",
+      "province": "辽宁",
+      "x": 840.2,
+      "y": 289.3,
+      "description": "Lars关于沈阳的记忆"
+    },
+    {
+      "id": "chongzuo",
+      "name": "崇左",
+      "province": "广西",
+      "x": 612,
+      "y": 742,
+      "description": "Lars关于崇左的记忆"
+    },
+    {
+      "id": "shenzhen",
+      "name": "深圳",
+      "province": "广东",
+      "x": 748.3,
+      "y": 735.8,
+      "description": "Lars关于深圳的记忆"
+    },
+    {
+      "id": "hefei",
+      "name": "合肥",
+      "province": "安徽",
+      "x": 780.7,
+      "y": 514.6,
+      "description": "Lars关于合肥的记忆"
+    },
+    {
+      "id": "qingdao",
+      "name": "青岛",
+      "province": "山东",
+      "x": 818.7,
+      "y": 409.8,
+      "description": "Lars关于青岛的记忆"
+    },
+    {
+      "id": "dongguan",
+      "name": "东莞",
+      "province": "广东",
+      "x": 738,
+      "y": 726,
+      "description": "Lars关于东莞的记忆"
+    },
+    {
+      "id": "haerbin",
+      "name": "哈尔滨",
+      "province": "黑龙江",
+      "x": 888.7,
+      "y": 177.3,
+      "description": "Lars关于哈尔滨的记忆"
+    },
+    {
+      "id": "chengdu",
+      "name": "成都",
+      "province": "四川",
+      "x": 542.5,
+      "y": 560.5,
+      "description": "Lars关于成都的记忆"
+    },
+    {
+      "id": "ningbo",
+      "name": "宁波",
+      "province": "浙江",
+      "x": 868.6,
+      "y": 543.9,
+      "description": "Lars关于宁波的记忆"
+    },
+    {
+      "id": "chongqing",
+      "name": "重庆",
+      "province": "重庆",
+      "x": 582.4,
+      "y": 584.3,
+      "description": "Lars关于重庆的记忆"
+    },
+    {
+      "id": "huainan",
+      "name": "淮南",
+      "province": "安徽",
+      "x": 776,
+      "y": 494,
+      "description": "Lars关于淮南的记忆"
+    },
+    {
+      "id": "guiyang",
+      "name": "贵阳",
+      "province": "贵州",
+      "x": 594.7,
+      "y": 639.7,
+      "description": "Lars关于贵阳的记忆"
+    },
+    {
+      "id": "xishuangbanna",
+      "name": "西双版纳",
+      "province": "云南",
+      "x": 492,
+      "y": 746,
+      "description": "Lars关于西双版纳的记忆"
+    },
+    {
+      "id": "putian",
+      "name": "莆田",
+      "province": "福建",
+      "x": 828.5,
+      "y": 650,
+      "description": "Lars关于莆田的记忆"
+    },
+    {
+      "id": "baoding",
+      "name": "保定",
+      "province": "河北",
+      "x": 726,
+      "y": 358,
+      "description": "Lars关于保定的记忆"
+    },
+    {
+      "id": "handan",
+      "name": "邯郸",
+      "province": "河北",
+      "x": 712,
+      "y": 418,
+      "description": "Lars关于邯郸的记忆"
+    },
+    {
+      "id": "fuyang",
+      "name": "阜阳",
+      "province": "安徽",
+      "x": 745,
+      "y": 482,
+      "description": "Lars关于阜阳的记忆"
+    },
+    {
+      "id": "zaozhuang",
+      "name": "枣庄",
+      "province": "山东",
+      "x": 770,
+      "y": 442,
+      "description": "Lars关于枣庄的记忆"
+    },
+    {
+      "id": "shaoxing",
+      "name": "绍兴",
+      "province": "浙江",
+      "x": 850,
+      "y": 541,
+      "description": "Lars关于绍兴的记忆"
+    },
+    {
+      "id": "zunyi",
+      "name": "遵义",
+      "province": "贵州",
+      "x": 590,
+      "y": 612,
+      "description": "Lars关于遵义的记忆"
+    },
+    {
+      "id": "xian",
+      "name": "西安",
+      "province": "陕西",
+      "x": 620.3,
+      "y": 479.3,
+      "description": "Lars关于西安的记忆"
+    },
+    {
+      "id": "tianjin",
+      "name": "天津",
+      "province": "天津",
+      "x": 758.7,
+      "y": 353.9,
+      "description": "Lars关于天津的记忆"
+    },
+    {
+      "id": "taiyuan",
+      "name": "太原",
+      "province": "山西",
+      "x": 677.7,
+      "y": 386,
+      "description": "Lars关于太原的记忆"
+    },
+    {
+      "id": "lvliang",
+      "name": "吕梁",
+      "province": "山西",
+      "x": 655,
+      "y": 392,
+      "description": "Lars关于吕梁的记忆"
+    },
+    {
+      "id": "kashi",
+      "name": "喀什",
+      "province": "新疆",
+      "x": 55.3,
+      "y": 384.5,
+      "description": "Lars关于喀什的记忆"
+    }
+  ],
+  "defaultCuratedPlaces": {
+    "shanghai": [
+      {
+        "id": "place-shanghai-1",
+        "name": "安福路话剧艺术中心",
+        "category": "剧场 / 演出",
+        "date": "2026.04",
+        "location": "徐汇区安福路288号",
+        "content": "雨天的午后，散场后梧桐树叶落了一地。戏剧的台词还在耳边回响，在街角的小咖啡馆坐了很久，看撑伞的路人匆匆走过。",
+        "photos": []
+      },
+      {
+        "id": "place-shanghai-2",
+        "name": "鲁迅公园斜角咖啡",
+        "category": "咖啡馆 / 漫游",
+        "date": "2026.03",
+        "location": "虹口区甜爱路周边",
+        "content": "阳光穿过树荫斑驳落在木桌上，手冲曼特宁香气沉静。店里只有黑胶唱片的杂音与偶尔翻动纸张的沙沙声。",
+        "photos": []
+      }
+    ],
+    "hangzhou": [
+      {
+        "id": "place-hangzhou-1",
+        "name": "满觉陇山间茶室",
+        "category": "茶空间 / 闲游",
+        "date": "2026.05",
+        "location": "西湖区满觉陇",
+        "content": "沿石阶拾级而上，山风穿过竹林。点了一壶九曲红梅，安静地看午后光影在竹席上流动，时间好像变慢了。",
+        "photos": []
+      }
+    ],
+    "beijing": [
+      {
+        "id": "place-beijing-1",
+        "name": "东四胡同独立书店",
+        "category": "书店 / 散步",
+        "date": "2026.04",
+        "location": "东城区东四九条",
+        "content": "穿过幽深的胡同小径，推开青砖小院的木门。老式四合院改造成的阅读空间，瓦片上落着初春清脆的鸽哨声。",
+        "photos": []
+      }
+    ],
+    "xiamen": [
+      {
+        "id": "place-xiamen-1",
+        "name": "沙坡尾避风坞老船坞",
+        "category": "海边 / 漫步",
+        "date": "2026.02",
+        "location": "思明区大学路",
+        "content": "潮水退去的时候，老渔船静静停泊在港湾里。咸涩的海风吹散了午后的暑气，晚霞把远处的双子塔染成浅浅的粉紫色。",
+        "photos": []
+      }
+    ],
+    "chengdu": [
+      {
+        "id": "place-chengdu-1",
+        "name": "望江楼公园竹林茶座",
+        "category": "茶馆 / 慢步",
+        "date": "2026.04",
+        "location": "武侯区望江路30号",
+        "content": "锦江边的竹林深处，盖碗茶雾气袅袅升起。老茶客闲敲棋子，春风吹动竹梢沙沙作响，体会最地道的成都慢调子。",
+        "secretNotes": "在竹影摇曳里翻开速写本，竹叶落下一枚青绿的书签，茶博士续水时铜壶轻鸣，令人忘却行色匆匆。",
+        "photos": [],
+        "secretPhotos": []
+      },
+      {
+        "id": "place-chengdu-2",
+        "name": "玉林西路旧物与唱片小店",
+        "category": "音乐 / 街区巡礼",
+        "date": "2026.03",
+        "location": "武侯区玉林西路",
+        "content": "深巷里积淀着岁月质感的旧物店，黑胶机里播放着低沉的爵士乐，门外是黄昏里温暖热闹的市井烟火气息。",
+        "secretNotes": "淘到一张泛黄的木吉他黑胶，老板顺手递来一杯茉莉花茶，说慢一点才能听见旋律里的心跳。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ],
+    "changzhou": [
+      {
+        "id": "place-changzhou-music-fest",
+        "name": "太湖湾音乐节",
+        "category": "音乐节 / 现场",
+        "date": "2026.05",
+        "location": "常州市武进区太湖湾旅游度假区",
+        "content": "太湖之畔的微风与傍晚的夕阳，舞台上的声浪和草地上一同挥手的人群。落日余晖中奔跑的少年，关于春末最自由鲜活的声响。",
+        "secretNotes": "落日的时候天空泛起粉橙色，音乐刚好切到那一首歌，身旁的人转过头笑了。那一刻好像所有漂泊都有了片刻的安放。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ],
+    "xian": [
+      {
+        "id": "place-xian-1",
+        "name": "南门古城墙夜骑漫行",
+        "category": "城市漫步 / 巡礼",
+        "date": "2026.04",
+        "location": "碑林区南门城墙",
+        "content": "青砖漫长，城墙上的风吹过千年岁月的轮廓。俯瞰城门下车水马龙的灯火，历史与当下的市井在这里温柔交汇。",
+        "secretNotes": "在敌楼的阴影里停下车吹了很久的风，耳机里循环着同一首民谣，那一刻突然明白了古人的羁旅之思。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ],
+    "tianjin": [
+      {
+        "id": "place-tianjin-1",
+        "name": "五大道海棠花下的午后",
+        "category": "建筑巡礼 / 散步",
+        "date": "2026.04",
+        "location": "和平区五大道历史文化街区",
+        "content": "老租界的红砖洋房掩映在茂密的海棠花枝后。推开有些沉重的木门，留声机的乐声里，时间像凝固的琥珀。",
+        "secretNotes": "在窗边那张小圆桌坐了两个小时，看着海棠花瓣一片一片落在大理石台阶上。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ],
+    "taiyuan": [
+      {
+        "id": "place-taiyuan-1",
+        "name": "晋祠周柏与难老泉寻幽",
+        "category": "古建寻踪 / 漫步",
+        "date": "2026.03",
+        "location": "晋源区晋祠公园",
+        "content": "苍劲的周柏横卧在古殿之前，难老泉水澄澈地从石罅中涌出。三月的春阳穿过雕花窗棂，静谧得能听见松针落地的细响。",
+        "secretNotes": "触碰古柏粗糙树皮的那一瞬间，手心仿佛感受到了横跨数千年的温度与脉搏。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ],
+    "xishuangbanna": [
+      {
+        "id": "place-xishuangbanna-1",
+        "name": "曼听公园热带植物园漫行",
+        "category": "热带漫游 / 秘境",
+        "date": "2026.02",
+        "location": "景洪市曼听南路35号",
+        "content": "棕榈树与芭蕉叶遮蔽了午后的阳光，空气里弥漫着湿润的草木香与鸡蛋花的清甜。澜沧江畔的微风吹散了整座城市的喧嚣。",
+        "secretNotes": "在暮色四合时遇见了一场没有预兆的太阳雨，雨滴穿过巨大的芭蕉叶，宛如雨林里独奏的乐曲。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ],
+    "shaoxing": [
+      {
+        "id": "place-shaoxing-1",
+        "name": "仓桥直街乌篷船行水巷",
+        "category": "水乡寻幽 / 漫步",
+        "date": "2026.03",
+        "location": "越城区仓桥直街",
+        "content": "青石板路被岁月打磨得发亮，乌篷船从古石桥下悠悠摇过。沿河人家的炊烟与黄酒香气交织，是最地道的江南日常。",
+        "secretNotes": "老爷爷摇橹的手势极稳，水声欸乃作响，桥上走过放学的孩童，那一刻时间仿佛从未流逝。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ],
+    "kashi": [
+      {
+        "id": "place-kashi-1",
+        "name": "喀什古城与百年老茶馆",
+        "category": "古城漫步 / 茶馆巡礼",
+        "date": "2026.06",
+        "location": "喀什市解放北路喀什古城",
+        "link": "",
+        "content": "土黄色的高台生土建筑错落有致，老茶馆里飘着红茶与藏红花的香气。艾德莱斯绸在阳光下闪着斑斓的光芒，阳光洒在斑驳的木窗棱上，时光在这里放慢了脚步。",
+        "secretNotes": "坐在二楼临街的长廊上品茶听热瓦普弹唱，微风拂过挂满干果的巷弄，那一刻仿佛穿越了千年的丝路岁月。",
+        "photos": [],
+        "secretPhotos": []
+      }
+    ]
+  }
+}
